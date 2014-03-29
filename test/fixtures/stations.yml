@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  babs_id: 1
+  name: MyString
+  lat: 1.5
+  lng: 1.5
+  dockcount: 1
+  landmark: MyString
+  installation: 2014-03-29
+
+two:
+  babs_id: 1
+  name: MyString
+  lat: 1.5
+  lng: 1.5
+  dockcount: 1
+  landmark: MyString
+  installation: 2014-03-29

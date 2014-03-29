@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  babs_id: 1
+  duration: 1
+  start_time: 2014-03-29 11:18:29
+  start_station_name: MyString
+  start_station_id: 
+  start_terminal: 1
+  end_time: 2014-03-29 11:18:29
+  end_station_name: MyString
+  end_station_id: 
+  end_terminal: 1
+  bike_number: 1
+  subscription_type: MyString
+  zip_code: MyString
+
+two:
+  babs_id: 1
+  duration: 1
+  start_time: 2014-03-29 11:18:29
+  start_station_name: MyString
+  start_station_id: 
+  start_terminal: 1
+  end_time: 2014-03-29 11:18:29
+  end_station_name: MyString
+  end_station_id: 
+  end_terminal: 1
+  bike_number: 1
+  subscription_type: MyString
+  zip_code: MyString
