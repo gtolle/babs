@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140329181829) do
+ActiveRecord::Schema.define(version: 20140329192938) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(version: 20140329181829) do
   end
 
   add_index "stations", ["babs_id"], name: "index_stations_on_babs_id", unique: true, using: :btree
+  add_index "stations", ["landmark"], name: "index_stations_on_landmark", using: :btree
 
   create_table "trips", force: true do |t|
     t.integer  "babs_id"
@@ -50,6 +51,8 @@ ActiveRecord::Schema.define(version: 20140329181829) do
 
   add_index "trips", ["babs_id"], name: "index_trips_on_babs_id", unique: true, using: :btree
   add_index "trips", ["end_station_id"], name: "index_trips_on_end_station_id", using: :btree
+  add_index "trips", ["end_time"], name: "index_trips_on_end_time", using: :btree
   add_index "trips", ["start_station_id"], name: "index_trips_on_start_station_id", using: :btree
+  add_index "trips", ["start_time"], name: "index_trips_on_start_time", using: :btree
 
 end
