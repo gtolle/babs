@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  origin_station_id: 
+  destination_station_id: 
+  summary: MyString
+  overview_polyline: MyText
+  bounds_ne_lat: 1.5
+  bounds_ne_lng: 1.5
+  bounds_sw_lat: 1.5
+  bounds_sw_lng: 1.5
+
+two:
+  origin_station_id: 
+  destination_station_id: 
+  summary: MyString
+  overview_polyline: MyText
+  bounds_ne_lat: 1.5
+  bounds_ne_lng: 1.5
+  bounds_sw_lat: 1.5
+  bounds_sw_lng: 1.5

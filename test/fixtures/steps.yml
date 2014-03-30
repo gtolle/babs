@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  route_id: 
+  leg_id: 
+  distance_text: MyString
+  distance: 1
+  duration_text: MyString
+  duration: 1
+  start_lat: 1.5
+  start_lng: 1.5
+  end_lat: 1.5
+  end_lng: 1.5
+  html_instructions: MyText
+  polyline: MyText
+  maneuver: MyString
+  travel_mode: MyString
+  idx: 1
+
+two:
+  route_id: 
+  leg_id: 
+  distance_text: MyString
+  distance: 1
+  duration_text: MyString
+  duration: 1
+  start_lat: 1.5
+  start_lng: 1.5
+  end_lat: 1.5
+  end_lng: 1.5
+  html_instructions: MyText
+  polyline: MyText
+  maneuver: MyString
+  travel_mode: MyString
+  idx: 1
