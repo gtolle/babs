@@ -1,5 +1,33 @@
+<div id="overlay">
+  <div class="text">
+    <div class="babs">Bay Area Bike Share</div>
+    <div class="story">is a story about</div>
+    <div class="caltrain">Caltrain</div>
+  </div>
+  <div class="text-small">
+    Nearly &frac13; of weekday rides start or end at a Caltrain station
+  </div>
+  <div>
+    <img src="<%= image_path 'daily-rides.png' %>">
+  </div>
+  <div class="btn-holder">
+    <a href="#gogogo" id="gogogo" class="btn">But You'll Never Guess Where The Rest Go...</a>
+  </div>
+</div>
+
+<div id="overlay-hidden">
+</div>
+
 <div id="map-canvas"></div>
-<div id="infobox"><div id="infoholder"></div></div>
+<div id="infobox">
+  <div id="box-holder">
+    <div id="msg-holder"></div>
+    <div id="datepicker"></div>
+    <div id="date-holder"></div>
+    <div id="time-holder"></div>
+    <div id="subinfo-holder"></div>
+  </div>
+</div>
 
 <%= content_for :ready do %>
 new Map();

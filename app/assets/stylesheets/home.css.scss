@@ -1,17 +1,132 @@
+@font-face {
+    font-family: 'Junction';
+    src: url('junction-bold.eot');
+    src: url('junction-bold.eot?#iefix') format('embedded-opentype'),
+         url('junction-bold.woff') format('woff'),
+         url('junction-bold.ttf') format('truetype'),
+         url('junction-bold.svg#junctionbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Junction';
+    src: url('junction-light.eot');
+    src: url('junction-light.eot?#iefix') format('embedded-opentype'),
+         url('junction-light.woff') format('woff'),
+         url('junction-light.ttf') format('truetype'),
+         url('junction-light.svg#junctionlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Junction';
+    src: url('junction-regular.eot');
+    src: url('junction-regular.eot?#iefix') format('embedded-opentype'),
+         url('junction-regular.woff') format('woff'),
+         url('junction-regular.ttf') format('truetype'),
+         url('junction-regular.svg#junctionregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 html { height: 100% }
 body { height: 100%; margin: 0; padding: 0 }
 #map-canvas { height: 100% }
+#overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    background: #0068d5;
+    font-family: Junction, sans-serif;
+    text-align: center;
+    color: #fff;
+}
+#overlay-hidden {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 24px;
+    width: 100%;
+    z-index: 900;
+    background: #0068d5;
+}
+a {
+  color: #333;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+.text {
+    margin: 40px 0px;
+    font-size: 48px;
+    div {
+	margin: 20px;
+    }
+}
+.text-small {
+    margin: 20px 0px;
+    font-size: 32px;
+}
+.babs {
+    color: #82c7bc;
+}
+.btn {
+    color: white;
+    background: #33b689;
+    padding: 11px 19px;
+    font-size: 17.5px;
+    display: inline-block;
+    text-align: center;
+}
+.caltrain {
+    color: #e03d40;
+    font-weight: bold;
+}
+.btn-holder {
+    margin-top: 20px;
+}
 #infobox { 
     position: absolute; 
+    text-align: center;
     top: 0px; 
     right: 0px; 
     margin: 30px; 
-    width: 300px; 
-    height: 100px; 
-    background: #fff; 
-    border: 1px solid #333; 
-    font-size: 40px;
+    width: 252px; 
+    height: 300px; 
+    background: #fff;
+    color: #333;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
+    border-radius: 2px;
+    font-family: Junction, sans-serif;
 }
-#infoholder {
-    padding: 15px 0px 0px 60px;
+#datepicker {
+    font-size: 12px;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 232px;
+    height: 191px;
+}
+#box-holder {
+    margin: 10px;
+}
+#msg-holder {
+    font-size: 16px;
+}
+#date-holder {
+    margin-top: 7px;
+    font-size: 16px;
+}
+#time-holder {
+    margin-top: 7px;
+    font-size: 16px;
 }

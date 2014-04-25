@@ -10,6 +10,9 @@ json.trips do
     json.end_tick trip.end_time.to_i
     json.start_pos [ trip.start_station.lat, trip.start_station.lng ]
     json.end_pos [ trip.end_station.lat, trip.end_station.lng ]
+    json.start_station_id trip.start_station.id
+    json.end_station_id trip.end_station.id
+
     json.duration trip.duration
     # if trip.customer_zip_code and trip.subscription_type == "Subscriber"
     #   json.zip_code do 
