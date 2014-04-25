@@ -6,9 +6,7 @@ class HomeController < ApplicationController
   def trips
     date_parts = params[:date].split("/")
     normal_date = "#{date_parts[1]}-#{date_parts[0]}-#{date_parts[2]}"
-    logger.info normal_date
     @start_date = Time.zone.parse(normal_date) + 5.hours
-    logger.info @start_date
     @end_date = @start_date + 1.day
 
     json = Rails.cache.fetch("trips/#{@start_date}") do
