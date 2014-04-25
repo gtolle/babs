@@ -30,6 +30,7 @@ class Map
                 this.stationsById[station.id] = station
                 this.drawStationCircle(station)
             $('#msg-holder').html("Pick a Day - It's a Bike Ballet")
+            $('#subinfo-holder').html("FYI, the City and the Peninsula both work")
             $( "#datepicker" ).datepicker
                 minDate: "08/29/2013"
                 maxDate: "02/28/2014"

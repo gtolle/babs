@@ -36,7 +36,7 @@
 
 html { height: 100% }
 body { height: 100%; margin: 0; padding: 0 }
-#map-canvas { height: 100% }
+#map-canvas { margin-top: 20px; height: 100% }
 #overlay {
     position: absolute;
     top: 0px;
@@ -53,7 +53,7 @@ body { height: 100%; margin: 0; padding: 0 }
     position: absolute;
     top: 0px;
     left: 0px;
-    height: 24px;
+    height: 20px;
     width: 100%;
     z-index: 900;
     background: #0068d5;
@@ -100,14 +100,14 @@ a {
     text-align: center;
     top: 0px; 
     right: 0px; 
-    margin: 30px; 
+    margin: 50px 30px 0px 0px; 
     width: 252px; 
-    height: 300px; 
+    height: 314px; 
     background: #fff;
     color: #333;
     box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
     border-radius: 2px;
-    font-family: Junction, sans-serif;
+    font-family: sans-serif;
 }
 #datepicker {
     font-size: 12px;
@@ -121,6 +121,10 @@ a {
 }
 #msg-holder {
     font-size: 16px;
+}
+#subinfo-holder {
+    margin-top: 10px;
+    font-size: 12px;
 }
 #date-holder {
     margin-top: 7px;
