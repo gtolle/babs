@@ -4,7 +4,7 @@ class Station < ActiveRecord::Base
     route = Route.where(:origin_station => self, :destination_station => station).first
     return route if route
 
-    sleep(0.5)
+    sleep(1.0)
     base_url = "https://maps.googleapis.com/maps/api/directions/json"
     params = {
       :origin => "#{self.lat},#{self.lng}",
