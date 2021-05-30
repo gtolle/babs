@@ -36,9 +36,13 @@ GEM
       execjs
     coffee-script-source (1.7.0)
     dalli (2.7.0)
+    domain_name (0.5.20190701)
+      unf (>= 0.0.5, < 1.0.0)
     erubis (2.7.0)
     execjs (2.0.2)
     hike (1.2.3)
+    http-cookie (1.0.3)
+      domain_name (~> 0.5)
     i18n (0.6.9)
     jbuilder (1.5.3)
       activesupport (>= 3.0.0)
@@ -55,6 +59,7 @@ GEM
     mime-types (1.25.1)
     minitest (4.7.5)
     multi_json (1.9.2)
+    netrc (0.11.0)
     pg (0.17.1)
     polyglot (0.3.4)
     rack (1.5.5)
@@ -76,8 +81,10 @@ GEM
     rake (10.2.2)
     rdoc (4.1.1)
       json (~> 1.4)
-    rest-client (1.6.7)
-      mime-types (>= 1.16)
+    rest-client (1.8.0)
+      http-cookie (>= 1.0.2, < 2.0)
+      mime-types (>= 1.16, < 3.0)
+      netrc (~> 0.7)
     sass (3.2.18)
     sass-rails (4.0.2)
       railties (>= 4.0.0, < 5.0)
@@ -109,6 +116,9 @@ GEM
     uglifier (2.5.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.7.7)
 
 PLATFORMS
   ruby
